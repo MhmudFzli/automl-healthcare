@@ -1,0 +1,21 @@
+{
+    "roc_auc": 0.9155405631192188,
+    "accuracy": 0.8269647696476965,
+    "balanced_accuracy": 0.8269587489059786,
+    "mcc": 0.6539351478934748,
+    "f1": 0.8277815239379636,
+    "precision": 0.8254437869822485,
+    "recall": 0.8301325398972139,
+    "train_time_sec": 182.64875984191895,
+    "best_estimator": "lgbm",
+    "best_config": {
+        "n_estimators": 156,
+        "num_leaves": 24,
+        "min_child_samples": 5,
+        "learning_rate": 0.05445977903266433,
+        "log_max_bin": 6,
+        "colsample_bytree": 0.9906009614023362,
+        "reg_alpha": 0.0017799160324139948,
+        "reg_lambda": 6.369994132932229
+    }
+}

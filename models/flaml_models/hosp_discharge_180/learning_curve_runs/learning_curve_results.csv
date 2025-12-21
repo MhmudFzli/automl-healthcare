@@ -1,0 +1,6 @@
+frac,n_train,train_auc,test_auc,train_time_s,run_dir
+0.05,1475,0.9428492895805142,0.9059778786081221,120.13621735572815,../models/flaml_models/hosp_discharge_180\learning_curve_runs\run_5
+0.1,2951,0.9573376143164897,0.9087067168006348,120.60399866104126,../models/flaml_models/hosp_discharge_180\learning_curve_runs\run_10
+0.2,5903,0.9425951528410952,0.911900484215284,123.56870007514954,../models/flaml_models/hosp_discharge_180\learning_curve_runs\run_20
+0.4,11807,0.9489684880923994,0.9140526500671892,124.96112751960754,../models/flaml_models/hosp_discharge_180\learning_curve_runs\run_40
+1.0,29519,0.9434049245997655,0.9166274421269428,131.70338487625122,../models/flaml_models/hosp_discharge_180\learning_curve_runs\run_100
