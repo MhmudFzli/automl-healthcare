@@ -1,0 +1,23 @@
+{
+  "baseline": {
+    "roc_auc": 0.9066982049347494,
+    "accuracy": 0.8172086720867209,
+    "balanced_accuracy": 0.817205700830586,
+    "mcc": 0.6344162240820598,
+    "f1": 0.8177765770633527,
+    "precision": 0.8167835941716136,
+    "recall": 0.8187719772788747,
+    "train_time_sec": 0.6442766189575195
+  },
+  "cleaned": {
+    "roc_auc": 0.9095539888914927,
+    "accuracy": 0.8207317073170731,
+    "balanced_accuracy": 0.8207318333340554,
+    "mcc": 0.6414628893405833,
+    "f1": 0.8209985117034231,
+    "precision": 0.8213318895506226,
+    "recall": 0.8206654043819313,
+    "train_time_sec": 0.6452538967132568
+  },
+  "cleaning_action": "relabelled 315 suspect samples to ensemble_pred"
+}
