@@ -1,0 +1,6 @@
+frac,n_train,train_auc,test_auc,train_time_s,run_dir
+0.05,1475,0.9843078925692769,0.9117442348005306,16.753132581710815,../models/autogluon_models/hosp_discharge_new\learning_curve_runs\run_5
+0.1,2951,0.9845030247075196,0.9201662802232453,23.474719524383545,../models/autogluon_models/hosp_discharge_new\learning_curve_runs\run_10
+0.2,5903,0.9733449428547941,0.9243450248533881,38.025508642196655,../models/autogluon_models/hosp_discharge_new\learning_curve_runs\run_20
+0.4,11807,0.9708310199312677,0.9259346928121817,52.523746728897095,../models/autogluon_models/hosp_discharge_new\learning_curve_runs\run_40
+1.0,29519,0.9548720988770816,0.927736536827014,114.87764167785645,../models/autogluon_models/hosp_discharge_new\learning_curve_runs\run_100
