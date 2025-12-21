@@ -1,0 +1,25 @@
+{
+  "model_ids": [
+    "StackedEnsemble_AllModels_1_AutoML_1_20251123_220617",
+    "StackedEnsemble_AllModels_2_AutoML_1_20251123_220617",
+    "StackedEnsemble_AllModels_3_AutoML_1_20251123_220617",
+    "StackedEnsemble_BestOfFamily_3_AutoML_1_20251123_220617",
+    "StackedEnsemble_BestOfFamily_1_AutoML_1_20251123_220617",
+    "StackedEnsemble_BestOfFamily_2_AutoML_1_20251123_220617",
+    "GBM_1_AutoML_1_20251123_220617",
+    "GBM_2_AutoML_1_20251123_220617",
+    "StackedEnsemble_AllModels_4_AutoML_1_20251123_220617",
+    "StackedEnsemble_BestOfFamily_4_AutoML_1_20251123_220617",
+    "GBM_5_AutoML_1_20251123_220617",
+    "GBM_3_AutoML_1_20251123_220617",
+    "GBM_grid_1_AutoML_1_20251123_220617_model_1",
+    "GBM_4_AutoML_1_20251123_220617",
+    "GBM_grid_1_AutoML_1_20251123_220617_model_2",
+    "GBM_grid_1_AutoML_1_20251123_220617_model_4",
+    "DRF_1_AutoML_1_20251123_220617",
+    "GBM_grid_1_AutoML_1_20251123_220617_model_5",
+    "GLM_1_AutoML_1_20251123_220617",
+    "XRT_1_AutoML_1_20251123_220617",
+    "GBM_grid_1_AutoML_1_20251123_220617_model_3"
+  ]
+}

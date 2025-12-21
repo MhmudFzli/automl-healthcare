@@ -1,0 +1,6 @@
+frac,n_train,train_auc,test_auc,train_time,run_dir
+0.05,1475,0.9895055009707596,0.9164348752806524,64.10730338096619,../models/h2o_models/hosp_discharge_600\learning_curve_runs\run_5
+0.1,2951,0.9856412517741735,0.9209257515266357,76.55885434150696,../models/h2o_models/hosp_discharge_600\learning_curve_runs\run_10
+0.2,5903,0.9671245722777669,0.922803094671135,110.5374264717102,../models/h2o_models/hosp_discharge_600\learning_curve_runs\run_20
+0.4,11807,0.9668330307618631,0.9247101086798221,121.38395547866821,../models/h2o_models/hosp_discharge_600\learning_curve_runs\run_40
+1.0,29519,0.9621264611987546,0.9260368516539782,121.38193345069885,../models/h2o_models/hosp_discharge_600\learning_curve_runs\run_100
