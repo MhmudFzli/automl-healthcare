@@ -1,22 +1,31 @@
-# Data Project Template
+# Multimodal AutoML for Clinical Phenotyping (Hypertension)  
+**AutoGluon · H2O AutoML · FLAML** — Feature engineering from MIMIC-IV (structured + discharge & radiology notes), model benchmarking, and explainability (SHAP)
 
-<a target="_blank" href="https://datalumina.com/">
-    <img src="https://img.shields.io/badge/Datalumina-Project%20Template-2856f7" alt="Datalumina Project" />
-</a>
+---
 
-## Cookiecutter Data Science
-This project template is a simplified version of the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) template, created to suit the needs of Datalumina and made available as a GitHub template.
+## 🔎 Project summary
+This repository contains a reproducible pipeline and experimental study that evaluates **AutoML frameworks** for clinical phenotyping (hypertension) using the MIMIC-IV dataset. The pipeline integrates structured (labs, vitals, demographics) and unstructured (discharge and radiology notes) data, produces engineered features (including rule-based NLP phenotype features), trains multiple AutoML and baseline models, and provides interpretability artifacts (feature importance, SHAP).
 
-## Adjusting .gitignore
+The goal is to assess whether off-the-shelf AutoML systems (AutoGluon, H2O AutoML, FLAML) can produce robust, interpretable classifiers on real clinical data and how they compare against tuned baseline models (XGBoost, LightGBM, Random Forest, Logistic Regression).
 
-Ensure you adjust the `.gitignore` file according to your project needs. For example, since this is a template, the `/data/` folder is commented out and data will not be exlucded from source control:
+---
 
-```plaintext
-# exclude data from source control by default
-# /data/
-```
+## ⚡ Quick results (test set — **hospital only**)
+> Models were trained & evaluated on the same final test split. AutoGluon and tree-boosted models achieved the highest AUCs. Reporting key metrics (ROC-AUC, Accuracy, F1, Precision, Recall, MCC, Training Time).
 
-Typically, you want to exclude this folder if it contains either sensitive data that you do not want to add to version control or large files.
+| Model | ROC AUC | Accuracy | F1 | Precision | Recall | MCC | Training Time |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **AutoGluon** | **0.9284** | **0.8476** | **0.8479** | 0.8479 | 0.8479 | **0.6953** | 180 s |
+| H2O AutoML | 0.9261 | 0.8426 | 0.8462 | 0.8288 | **0.8644** | 0.6859 | 600 s |
+| FLAML | 0.9159 | 0.8283 | 0.8291 | 0.8266 | 0.8317 | 0.6566 | 600 s |
+| LightGBM | 0.9276 | 0.8432 | 0.8433 | 0.8441 | 0.8425 | 0.6864 | ~57 s |
+| XGBoost | 0.9274 | 0.8451 | 0.8454 | 0.8451 | 0.8458 | 0.6902 | ~11 s |
+| Logistic Regression | 0.9121 | 0.8258 | 0.8238 | 0.8351 | 0.8128 | 0.6520 | ~44 s |
+| Random Forest | 0.9226 | 0.8387 | 0.8386 | 0.8409 | 0.8363 | 0.6775 | ~241 s |
+
+> Figures: `./figures/roc_*` and `./figures/confusion_matrix_*` contain the ROC and confusion matrix images used in the paper.
+
+---
 
 ## Duplicating the .env File
 To set up your environment variables, you need to duplicate the `.env.example` file and rename it to `.env`. You can do this manually or using the following terminal command:
