@@ -24,6 +24,16 @@ The overall system architecture illustrates data extraction, feature engineering
 - Target label: Hypertension (ICD-9/10 based definition)
 
 ---
+
+## 🧪 Feature Engineering
+
+### Structured Features
+Extracted statistical summaries from labs, vitals, and anthropometric measurements.
+
+📄 **Feature descriptions:**  
+[tables/feature_descriptions.csv](reports/tables/features disc.csv)
+
+
 ---
 
 ## ⚡ Quick results (test set — **Final Hospital + Phenotypes**)
