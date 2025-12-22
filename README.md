@@ -70,7 +70,45 @@ Visual inspection of feature distributions after preprocessing.
 ### Feature Correlations
 Correlation structure among engineered features.
 
-![Feature Correlation Matrix](figures/correlations/feature_correlation_matrix.png)
+<img src="reports/figures/Correlation heatmap.png" width="100%">
+<img src="reports/figures/Corr with label.png" width="45%">
+
+---
+
+## 📝 NLP-based Clinical Phenotyping
+Hypertension mentions were extracted from discharge summaries and radiology reports using:
+
+- Rule-based keyword matching
+- Negation detection with contextual windows
+- LLM-assisted ambiguity resolution
+
+Temporal validation ensured **no label leakage** from post-discharge documentation. (you can check: reports/tables/notes_timing_leakage_summary.csv)
+
+---
+
+## 🔎 Model Explainability
+
+### Feature Importance
+Global feature importance for top-performing models.
+
+<table>
+  <tr>
+    <td><img src="models/autogluon_models/hosp_discharge_180/Feature importance.png" width="100%"></td>
+    <td><img src="models/h2o_models/hosp_discharge_600/h2o_contrib_top_plot.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="models/baselines/lgbm_models/hosp_discharge/lgbm feature importance.png" width="100%"></td>
+  </tr>
+</table>
+
+### SHAP Analysis (AutoGluon)
+SHAP summary plot highlighting both magnitude and direction of feature effects.
+
+![SHAP Summary](figures/shap/autogluon_shap_summary.png)
+
+**Key insight:**  
+Age, hypertension mentions in clinical notes, systolic blood pressure, and electrolyte biomarkers consistently drive predictions, aligning with established clinical knowledge.
+
 ---
 
 ## ⚡ Quick results (test set — **Final Hospital + Phenotypes**)
