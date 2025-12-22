@@ -10,7 +10,7 @@ The goal is to assess whether off-the-shelf AutoML systems (AutoGluon, H2O AutoM
 
 ---
 
-## ⚡ Quick results (test set — **hospital only**)
+## ⚡ Quick results (test set — **Final Hospital + Phenotypes**)
 > Models were trained & evaluated on the same final test split. AutoGluon and tree-boosted models achieved the highest AUCs. Reporting key metrics (ROC-AUC, Accuracy, F1, Precision, Recall, MCC, Training Time).
 
 | Model | ROC AUC | Accuracy | F1 | Precision | Recall | MCC | Training Time |
@@ -58,7 +58,8 @@ This command creates a copy of `.env.example` and names it `.env`, allowing you 
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
+│   ├── figures        <- Generated graphics and figures to be used in reporting
+│   └── tables         <- Generated tables of analysis and resluts to be used in reporting
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
