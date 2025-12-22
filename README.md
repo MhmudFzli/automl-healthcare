@@ -31,8 +31,46 @@ The overall system architecture illustrates data extraction, feature engineering
 Extracted statistical summaries from labs, vitals, and anthropometric measurements.
 
 📄 **Feature descriptions:**  
-[reports/tablesfeature_descriptions](reports/tables/features_disc.xlsx)
+[reports/tablesfeature_descriptions](reports/tables/features_disc.csv)
 
+### Feature Distributions
+Visual inspection of feature distributions after preprocessing.
+
+<table>
+  <tr>
+    <td><img src="reports/figures/distribution of anchor_age.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of Anion_Gap_mean.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="reports/figures/distribution of Bicarbonate_mean.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of bmi.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="reports/figures/distribution of bp_dia.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of bp_sys.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="reports/figures/distribution of Chloride_mean.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of Creatinine_mean.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="reports/figures/distribution of Glucose_mean.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of height.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="reports/figures/distribution of Potassium_mean.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of Sodium_mean.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="reports/figures/distribution of Urea_Nitrogen_mean.png" width="100%"></td>
+    <td><img src="reports/figures/distribution of weight.png" width="100%"></td>
+  </tr>
+</table>
+
+### Feature Correlations
+Correlation structure among engineered features.
+
+![Feature Correlation Matrix](figures/correlations/feature_correlation_matrix.png)
 ---
 
 ## ⚡ Quick results (test set — **Final Hospital + Phenotypes**)
