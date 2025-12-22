@@ -6,8 +6,24 @@
 ## 🔎 Project summary
 This repository contains a reproducible pipeline and experimental study that evaluates **AutoML frameworks** for clinical phenotyping (hypertension) using the MIMIC-IV dataset. The pipeline integrates structured (labs, vitals, demographics) and unstructured (discharge and radiology notes) data, produces engineered features (including rule-based NLP phenotype features), trains multiple AutoML and baseline models, and provides interpretability artifacts (feature importance, SHAP).
 
-The goal is to assess whether off-the-shelf AutoML systems (AutoGluon, H2O AutoML, FLAML) can produce robust, interpretable classifiers on real clinical data and how they compare against tuned baseline models (XGBoost, LightGBM, Random Forest, Logistic Regression).
+**The goal** is to assess whether off-the-shelf AutoML systems (AutoGluon, H2O AutoML, FLAML) can produce robust, interpretable classifiers on real clinical data and how they compare against tuned baseline models (XGBoost, LightGBM, Random Forest, Logistic Regression).
 
+---
+
+## 🧠 Pipeline Architecture
+The overall system architecture illustrates data extraction, feature engineering, AutoML training, and explainability.
+
+![AutoML Pipeline](reports/figures/Framework schema of project.jpg)
+
+---
+
+## 🗂️ Data Sources
+- **MIMIC-IV v2.2**
+- Structured tables: `patients`, `labevents`, `omr`, `chartevents`
+- Clinical notes: `discharge`, `radiology`
+- Target label: Hypertension (ICD-9/10 based definition)
+
+---
 ---
 
 ## ⚡ Quick results (test set — **Final Hospital + Phenotypes**)
