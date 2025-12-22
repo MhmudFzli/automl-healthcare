@@ -31,8 +31,7 @@ The overall system architecture illustrates data extraction, feature engineering
 Extracted statistical summaries from labs, vitals, and anthropometric measurements.
 
 📄 **Feature descriptions:**  
-[tables/feature_descriptions.csv](reports/tables/features disc.csv)
-
+[reports/tablesfeature_descriptions](reports/tables/features_disc.xlsx)
 
 ---
 
