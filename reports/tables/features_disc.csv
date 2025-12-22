@@ -1,0 +1,21 @@
+Column Name,Source Dataset,Meaning / Description,Notes / Comments
+subject_id,patients.csv,Unique identifier for each patient across all MIMIC tables.,Primary key for merging.
+gender,patients.csv,Biological sex of the patient (M / F).,Useful demographic feature.
+anchor_age,patients.csv,Age of the patient at hospital admission (adjusted for de-identification).,Core demographic covariate.
+label,patients.csv,"Outcome label (e.g., mortality, readmission, or whichever target you defined).",Your prediction target variable.
+has_labs,internally created flag,Indicator (0/1) whether this subject has any lab measurements in labevents_summary.csv.,Useful to track data completeness or for feature masking.
+has_omr,internally created flag,"Indicator (0/1) whether this subject has any OMR (Outpatient Measurement Record) data ¡ª i.e., hospital-side vitals (e.g., weight, height, BMI).",Shows who has structured hospital vitals.
+has_charte,internally created flag,"Indicator (0/1) whether this subject has any ICU chartevents measurements available (heart rate, RR, etc.).","Typically, only ICU patients = 1. Others = 0."
+Anion_Gap_mean,labevents_summary.csv,Mean Anion Gap (mEq/L) across all available measurements during hospitalization.,Reflects acid-base balance.
+Bicarbonate_mean,labevents_summary.csv,Mean serum bicarbonate (mEq/L).,Metabolic component of acid-base balance.
+Chloride_mean,labevents_summary.csv,Mean serum chloride (mEq/L).,Electrolyte balance.
+Creatinine_mean,labevents_summary.csv,Mean serum creatinine (mg/dL).,Kidney function marker.
+Glucose_mean,labevents_summary.csv,Mean blood glucose (mg/dL).,Metabolic / glycemic control.
+Potassium_mean,labevents_summary.csv,Mean serum potassium (mEq/L).,Electrolyte & cardiac stability marker.
+Sodium_mean,labevents_summary.csv,Mean serum sodium (mEq/L).,Electrolyte balance indicator.
+Urea_Nitrogen_mean,labevents_summary.csv,Mean blood urea nitrogen (mg/dL).,Kidney function marker.
+weight_kg_mean,omr_summary.csv (filled from charteevents if missing),Average hospital weight (kg).,Used to derive BMI or for dose adjustment.
+height_cm_mean,omr_summary.csv (filled from charteevents if missing),Average height (cm).,May be sparse; relatively static per patient.
+bmi_mean,omr_summary.csv,Average body mass index (kg/m?).,Derived from OMR weight & height.
+bp_sys_mean,omr_summary.csv,Mean systolic blood pressure (mmHg).,From hospital/outpatient vitals.
+bp_dia_mean,omr_summary.csv,Mean diastolic blood pressure (mmHg).,From hospital/outpatient vitals.
