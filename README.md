@@ -13,7 +13,7 @@ This repository contains a reproducible pipeline and experimental study that eva
 ## 🧠 Pipeline Architecture
 The overall system architecture illustrates data extraction, feature engineering, AutoML training, and explainability.
 
-![AutoML Pipeline](reports/figures/Framework schema of project.jpg)
+![AutoML Pipeline](reports/figures/Framework_schema_of_project.jpg)
 
 ---
 
