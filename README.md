@@ -94,17 +94,17 @@ Global feature importance for top-performing models.
 <table>
   <tr>
     <td><img src="models/autogluon_models/hosp_discharge_180/Feature importance.png" width="100%"></td>
-    <td><img src="models/h2o_models/hosp_discharge_600/h2o_contrib_top_plot.png" width="100%"></td>
+    <td><img src="models/baselines/lgbm_models/hosp_discharge/feature importance.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="models/baselines/lgbm_models/hosp_discharge/lgbm feature importance.png" width="100%"></td>
+    <td><img src="models/h2o_models/hosp_discharge_600/h2o_contrib_top_plot.png" width="100%"></td>
   </tr>
 </table>
 
 ### SHAP Analysis (AutoGluon)
-SHAP summary plot highlighting both magnitude and direction of feature effects.
+SHAP summary plot highlighting both magnitude and direction of feature effects for best model=Autogluon.
 
-![SHAP Summary](figures/shap/autogluon_shap_summary.png)
+<img src="models/autogluon_models/hosp_discharge_600/shap_fixed/autogluon_shap_kernel_summary.png" width="50%">
 
 **Key insight:**  
 Age, hypertension mentions in clinical notes, systolic blood pressure, and electrolyte biomarkers consistently drive predictions, aligning with established clinical knowledge.
@@ -125,6 +125,14 @@ Age, hypertension mentions in clinical notes, systolic blood pressure, and elect
 | Random Forest | 0.9226 | 0.8387 | 0.8386 | 0.8409 | 0.8363 | 0.6775 | ~241 s |
 
 > Figures: `./figures/roc_*` and `./figures/confusion_matrix_*` contain the ROC and confusion matrix images used in the paper.
+
+---
+
+## 📌 Key Takeaways
+- AutoML frameworks achieve **state-of-the-art performance** with minimal manual tuning
+- AutoGluon offers the best overall trade-off between accuracy, robustness, and development cost
+- NLP-derived phenotype features significantly enhance predictive performance
+- Explainability tools confirm **clinical plausibility** of learned patterns
 
 ---
 
