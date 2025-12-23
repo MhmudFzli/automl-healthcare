@@ -114,6 +114,18 @@ Age, hypertension mentions in clinical notes, systolic blood pressure, and elect
 ## ⚡ Quick results (test set — **Final Hospital + Phenotypes**)
 > Models were trained & evaluated on the same final test split. AutoGluon and tree-boosted models achieved the highest AUCs. Reporting key metrics (ROC-AUC, Accuracy, F1, Precision, Recall, MCC, Training Time).
 
+### Before Adding Phenotypes:
+| Model | ROC AUC | Accuracy | F1 | Precision | Recall | MCC | Training Time |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| AutoGluon | 0.8822 | **0.8012** | 0.8091 | 0.7795 | 0.8409 | 0.6042 | 600s |
+| H2O AutoML | 0.8802 | 0.7975 | **0.8155** | 0.7502 | **0.8931** | **0.6061** | 600 s |
+| FLAML | 0.8797 | 0.7991 | 0.8061 | 0.7804 | 0.8336 | 0.5997 | 600 s |
+| LightGBM | **0.8827** | 0.8005 | 0.8068 | **0.7834** | 0.8317 | 0.6021 | ~43 s |
+| XGBoost | 0.8821 | 0.7975 | 0.8051 | 0.7775 | 0.8347 | 0.5966 | ~11 s |
+| Logistic Regression | 0.8726 | 0.7895 | 0.7943 | 0.7780 | 0.8114 | 0.5796 | ~247 s |
+| Random Forest | 0.8759 | 0.7945 | 0.8028 | 0.7732 | 0.8347 | 0.5909 | ~411 s |
+
+### After Adding Phenotypes:
 | Model | ROC AUC | Accuracy | F1 | Precision | Recall | MCC | Training Time |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | **AutoGluon** | **0.9284** | **0.8476** | **0.8479** | 0.8479 | 0.8479 | **0.6953** | 180 s |
