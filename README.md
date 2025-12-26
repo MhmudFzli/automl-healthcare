@@ -93,8 +93,8 @@ Global feature importance for top-performing models.
 
 <table>
   <tr>
-    <td><img src="models/autogluon_models/hosp_discharge_180/Feature importance.png" width="100%"></td>
-    <td><img src="models/baselines/lgbm_models/hosp_discharge/feature importance.png" width="100%"></td>
+    <td><img src="models/autogluon_models/hosp_discharge_180/AG Feature importance.png" width="100%"></td>
+    <td><img src="models/baselines/lgbm_models/hosp_discharge/LGBM Feature importance.png" width="100%"></td>
   </tr>
   <tr>
     <td><img src="models/h2o_models/hosp_discharge_600/h2o_contrib_top_plot.png" width="100%"></td>
